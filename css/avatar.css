@@ -1,0 +1,33 @@
+.user{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    transform: translateX(10px);
+  }
+  
+  .avatar{
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    background-size: contain;
+    transition: 0.4s;
+    z-index: 1000;
+  }
+  
+  .avtr1{
+    background-image: url(../images/avatar/1.jpg);
+  }
+  .avtr2{
+    background-image: url(../images/avatar/2.jpg);
+  }
+  .avtr3{
+    background-image: url(../images/avatar/3.jpg);
+  }
+  .avtr4{
+    background-image: url(../images/avatar/4.jpg);
+  }
+  .avtr5{
+    background-image: url(../images/avatar/5.jpg);
+  }

@@ -1,0 +1,276 @@
+@font-face {
+	font-family: "Aquire";
+	src: url(../font/AquireBold-8Ma60.otf) format("opentype")
+}
+
+:root {
+  --darker: #2c3137;
+  --blue: #0026ff;
+  --grey: #6b6c70;
+  --white: #fff;
+  --red: #ff0000;
+  --black:#080808;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LIQUIDO", "Aquire", sans-serif;
+}
+
+html {
+  cursor: none;
+}
+html:hover #cursor {
+  display: flex;
+}
+
+body {
+  background-color: var(--darker);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+header .user{
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+header nav .multi-button button {
+  background-color: var(--darker);
+  border: none;
+  border-radius: 6px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-weight: 600;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  width: 200px;
+  cursor: none;
+}
+
+header nav .multi-button button:hover {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  color: var(--blue);
+}
+
+main{
+  display: grid;
+  place-items: center;
+}
+
+main .recherche {
+  display: grid;
+  place-items: center;
+  height: 150px;
+}
+
+main .recherche input[type="checkbox"] {
+  display: none;
+}
+
+main .recherche .box2 {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+}
+
+main .recherche .box2 label {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  right: 0%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  font-size: 23px;
+  cursor: none;
+}
+
+main .recherche .box2 label:hover {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+main .recherche .box2 input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 19px;
+  padding-left: 20px;
+  color: var(--blue);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  opacity: 0;
+  cursor: none;
+}
+main .recherche #check:checked + .box2 {
+  width: 500px;
+}
+main .recherche #check:checked + .box2 > input {
+  opacity: 1;
+}
+main .recherche #check:checked + .box2 > label {
+  box-shadow: none;
+  color: var(--blue);
+}
+main .recherche #check:checked + .box2 > label:hover {
+  transform: scale(1);
+}
+
+main .container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+
+main .container .card{
+  position: relative;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  margin: 50px;
+  /* margin-left: 150px; */
+  /* margin-right: 150px; */
+  border-radius: 20px;
+  transition: 0.5s;
+  color: var(--white);
+  background-color: var(--grey);
+}
+main .container .card h2{
+  padding: 10px;
+}
+
+main .container .card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: var(--blue);
+  z-index: -1;
+  transition: 0.4s;
+}
+main .container .card::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--blue);
+  z-index: -2;
+  filter: blur(40px);
+  transition: 0.4s;
+}
+main .container .card:hover::after,
+main .container .card:hover::before {
+  transition: 0.4s;
+  background: var(--red);
+}
+
+main .container .card:hover .avatar{
+  border: 2px solid var(--red);
+  transition: 0.4s;
+}
+
+main .container .avatar{
+  height: 65px;
+  width: 65px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  transform: translateX(80px);
+  background-size: contain;
+  transition: 0.4s;
+}
+
+main .container .avtr1{
+  background-image: url(../images/avatar/1.jpg);
+}
+main .container .avtr2{
+  background-image: url(../images/avatar/2.jpg);
+}
+main .container .avtr3{
+  background-image: url(../images/avatar/3.jpg);
+}
+main .container .avtr4{
+  background-image: url(../images/avatar/4.jpg);
+}
+main .container .avtr5{
+  background-image: url(../images/avatar/5.jpg);
+}
+
+
+
+#cursor {
+  height: 0;
+  width: 0;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1000;
+}
+#cursor::before {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+}
+#cursor::before {
+  border: dashed 4px var(--red);
+  height: 15px;
+  width: 15px;
+  z-index: 1000;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--darker) var(--darker);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--darker);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--darker);
+  border-radius: 20px;
+  border: 10px solid black;
+}

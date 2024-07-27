@@ -1,0 +1,215 @@
+{
+  "body_colors":
+  {
+    "colors":
+    [    
+      {
+        "name":"Blanc",
+        "value":"#FFFFFF"
+      },
+      {
+        "name":"Rouge",
+        "value":"#FF0000"
+      },
+      {
+        "name":"Orange",
+        "value":"#FF8000"
+      },
+      {
+        "name":"Jaune",
+        "value":"#F1F10D"
+      },
+      {
+        "name":"Vert Lime",
+        "value":"#69F10D"
+      },
+      {
+        "name":"Vert Foncé",
+        "value":"#429809"
+      },
+      {
+        "name":"Aqua",
+        "value":"#00FFF3"
+      },
+      {
+        "name":"Bleu Foncé",
+        "value":"#0000FF"
+      },
+      {
+        "name":"Magenta",
+        "value":"#C389FF"
+      },
+      {
+        "name":"Violet",
+        "value":"#7D00FF"
+      },
+      {
+        "name":"Rose Clair",
+        "value":"#FFD3FD"
+      },
+      {
+        "name":"Noir",
+        "value":"#000000"
+      }
+    ],
+    "target":"Primary"
+  },
+  "mirror_colors":
+  {
+    "colors":
+    [
+      {
+        "name":"Black",
+        "value":"#121212"
+      }
+    ],
+    "target":"Mt_MirrorCover"
+  },  
+  "wheel_designs":
+  {
+    "designs":
+    [
+      {
+        "name":"SFT_WHL - A",
+        "value":"Obj_Rim_T0A",
+        "thumb":"Render_Tyre_0A.png"
+      },
+      {
+        "name":"SFT_WHL - B",
+        "value":"Obj_Rim_T0B",
+        "thumb":"Render_Tyre_0B.png"
+      },
+      {
+        "name":"SFT_WHL - C",
+        "value":"Obj_Rim_T0C",
+        "thumb":"Render_Tyre_0C.png"
+      },
+      {
+        "name":"SFT_WHL - D",
+        "value":"Obj_Rim_T0D",
+        "thumb":"Render_Tyre_0D.png"
+      },
+      {
+        "name":"SFT_WHL - E",
+        "value":"Obj_Rim_T0E",
+        "thumb":"Render_Tyre_0E.png"
+      }
+    ]
+  },
+  "wheel_colors":
+  {
+    "colors":
+    [
+      {
+        "name":"Noir",
+        "value":"#000000"
+      },
+      {
+        "name":"Gris",
+        "value":"#4C5457"
+      },
+      {
+        "name":"Gris clair",
+        "value":"#dddddd"
+      },
+      {
+        "name":"Blanc",
+        "value":"#FFFFFF"
+      },
+      {
+        "name":"Rouge",
+        "value":"#FF0000"
+      },
+      {
+        "name":"Orange",
+        "value":"#FF8000"
+      },
+      {
+        "name":"Jaune",
+        "value":"#F1F10D"
+      },
+      {
+        "name":"Vert Lime",
+        "value":"#69F10D"
+      },
+      {
+        "name":"Vert Foncé",
+        "value":"#429809"
+      },
+      {
+        "name":"Aqua",
+        "value":"#00FFF3"
+      },
+      {
+        "name":"Bleu Foncé",
+        "value":"#0000FF"
+      },
+      {
+        "name":"Magenta",
+        "value":"#C389FF"
+      },
+      {
+        "name":"Violet",
+        "value":"#7D00FF"
+      },
+      {
+        "name":"Rose Clair",
+        "value":"#FFD3FD"
+      }
+    ],
+    "target":"Mt_AlloyWheels"
+  },
+  
+  "caliper_colors":
+  {
+    "colors":
+    [
+      {
+        "name":"Rouge",
+        "value":"#FF0000"
+      },
+      {
+        "name":"Orange",
+        "value":"#FF8000"
+      },
+      {
+        "name":"Jaune",
+        "value":"#F1F10D"
+      },
+      {
+        "name":"Vert Lime",
+        "value":"#69F10D"
+      },
+      {
+        "name":"Vert Foncé",
+        "value":"#429809"
+      },
+      {
+        "name":"Aqua",
+        "value":"#00FFF3"
+      },
+      {
+        "name":"Bleu Foncé",
+        "value":"#0000FF"
+      },
+      {
+        "name":"Magenta",
+        "value":"#C389FF"
+      },
+      {
+        "name":"Violet",
+        "value":"#7D00FF"
+      },
+      {
+        "name":"Rose Clair",
+        "value":"#FFD3FD"
+      },
+      {
+        "name":"Noir",
+        "value":"#000000"
+      }
+    ],
+    "target":"Caliper"
+  }
+  
+}
